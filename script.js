@@ -79,7 +79,7 @@ restartBtn.onclick = () => {
   showQuestion(currentIndex);
 };
 
-fetch('./utils/quiz.json')
+fetch('https://satellite-quiz-backend.vercel.app/questions')
   .then(res => res.json())
   .then(data => {
     quiz = data;
